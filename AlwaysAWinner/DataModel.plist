@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Prizes</key>
+	<array>
+		<dict>
+			<key>PrizeName</key>
+			<string>Apple</string>
+			<key>PrizeText</key>
+			<string>FREE Apple.</string>
+			<key>PrizeImageName</key>
+			<string>Apple-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Banana</string>
+			<key>PrizeText</key>
+			<string>FREE Banana.</string>
+			<key>PrizeImageName</key>
+			<string>Banana-Real-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Beer</string>
+			<key>PrizeText</key>
+			<string>FREE Beer.</string>
+			<key>PrizeImageName</key>
+			<string>Beer-head-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Coffee</string>
+			<key>PrizeText</key>
+			<string>FREE Coffee.</string>
+			<key>PrizeImageName</key>
+			<string>Coffee-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Hamburger</string>
+			<key>PrizeText</key>
+			<string>FREE Hamburger.</string>
+			<key>PrizeImageName</key>
+			<string>Hamburger-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Steak</string>
+			<key>PrizeText</key>
+			<string>FREE Steak.</string>
+			<key>PrizeImageName</key>
+			<string>Steak-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Sports Car.</string>
+			<key>PrizeText</key>
+			<string>FREE Sports Car.</string>
+			<key>PrizeImageName</key>
+			<string>Ferrari.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>
