@@ -53,8 +53,12 @@
     self.tableView.alpha = 0;
     
     //adwhirl
-    AdWhirlView *adWhirlView = [AdWhirlView requestAdWhirlViewWithDelegate:self];
-    [self.adView addSubview:adWhirlView];
+    CGRect adFrame = self.adView.frame;
+    self.adView = [AdWhirlView requestAdWhirlViewWithDelegate:self];
+    self.adView.frame = adFrame;
+    [self.view addSubview:self.adView];
+    
+    [self adWhirlDidReceiveAd:nil];
     
     //disclaimer
     UILabel *labelDisclaimer = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
@@ -232,15 +236,29 @@
     
     [UIView beginAnimations:nil context:nil];
     
-    [UIView setAnimationDuration:0.7];
+    float duration = 0.5;
+    if (!adWhirlView) duration = 0.0;
+    [UIView setAnimationDuration:duration];
     
-    CGSize adSize = [adWhirlView actualAdSize];
-    CGRect newFrame = adWhirlView.frame;
+    CGRect newFrame = CGRectZero;
+    CGSize adSize = CGSizeZero;
     
+    if (adWhirlView) {
+        adSize = [adWhirlView actualAdSize];
+        newFrame = adWhirlView.frame;
+    }
+
     newFrame.size = adSize;
     newFrame.origin.x = (self.view.bounds.size.width - adSize.width)/ 2;
     
     adWhirlView.frame = newFrame;
+    
+    CGRect tableFrame = self.tableView.frame;
+    
+    tableFrame.origin.y = imageViewHeader.frame.size.height + adSize.height;
+    tableFrame.size.height = self.view.frame.size.height - tableFrame.origin.y;
+    
+    self.tableView.frame = tableFrame;
     
     [UIView commitAnimations];
 }

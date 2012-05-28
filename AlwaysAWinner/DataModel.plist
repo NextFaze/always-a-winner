@@ -46,6 +46,22 @@
 		</dict>
 		<dict>
 			<key>PrizeName</key>
+			<string>Pizza</string>
+			<key>PrizeText</key>
+			<string>FREE Pizza.</string>
+			<key>PrizeImageName</key>
+			<string>Pizza-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Pop Corn</string>
+			<key>PrizeText</key>
+			<string>FREE Pop Corn.</string>
+			<key>PrizeImageName</key>
+			<string>Pop-corn-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
 			<string>Steak</string>
 			<key>PrizeText</key>
 			<string>FREE Steak.</string>
@@ -59,6 +75,22 @@
 			<string>FREE Sports Car.</string>
 			<key>PrizeImageName</key>
 			<string>Ferrari.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Strawberry</string>
+			<key>PrizeText</key>
+			<string>FREE Strawberry.</string>
+			<key>PrizeImageName</key>
+			<string>Strawberry-icon.png</string>
+		</dict>
+		<dict>
+			<key>PrizeName</key>
+			<string>Tomato</string>
+			<key>PrizeText</key>
+			<string>FREE Sports Car.</string>
+			<key>PrizeImageName</key>
+			<string>Tomato-icon.png</string>
 		</dict>
 	</array>
 </dict>

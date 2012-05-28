@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet UIImageView *imageViewHeader;
-@property (nonatomic, strong) IBOutlet UIView *adView;
+@property (nonatomic, strong) IBOutlet AdWhirlView *adView;
 
 
 - (IBAction)buttonTapped:(id)sender;
